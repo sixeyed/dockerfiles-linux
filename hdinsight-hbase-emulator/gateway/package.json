@@ -1,0 +1,10 @@
+{
+    "name": "hdinsight-hbase-emulator",
+    "private": true,
+    "version": "1.0.0",
+    "description": "Emulator for the HDInsight HBase gateway for Stargate",
+    "author": "Elton Stoneman <elton@sixeyed.com>",
+    "dependencies": {
+        "http-proxy": "1.11.1"
+    }
+}
