@@ -8,7 +8,7 @@ Containers can start as a 'master' (running the HDFS Name Node and YARN Resource
 
 This image lets you spin up a distributed cluster on a single Docker machine or on a Swarm.
 
-**Note: the [MapReduce configuration](mapred-site.xml) specifies restricted memory for YARN tasks (1GB JVM and 1.5GB for tasks), to support multi-node clusters running on a single machine.**
+**Note: the [MapReduce configuration](conf/mapred-site.xml) specifies restricted memory for YARN tasks (1GB JVM and 1.5GB for tasks), to support multi-node clusters running on a single machine.**
 
 ## Example cluster
 
