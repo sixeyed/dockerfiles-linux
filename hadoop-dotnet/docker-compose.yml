@@ -1,0 +1,24 @@
+version: '2'
+
+services:
+
+    master:
+        image: sixeyed/hadoop-dotnet:2.7.2
+        ports: 
+            - "50070:50070"
+            - "8088:8088"
+        command: master
+        hostname: hadoop-dotnet-master
+        container_name: hadoop-dotnet-master
+
+    worker-1:
+        image: sixeyed/hadoop-dotnet:2.7.2
+        command: worker
+        ports:
+            - "50075"
+            - "8142:8042"
+            - "19888:19888"
+        links:
+            - master:hadoop-dotnet-master
+        hostname: hadoop-dotnet-worker-1
+        container_name: hadoop-dotnet-worker-1
