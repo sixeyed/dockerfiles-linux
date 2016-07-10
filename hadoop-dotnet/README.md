@@ -2,6 +2,8 @@
 
 Image for running .NET MapReduce jobs. Installed with Hadoop and .NET Core. This is the sample image used in my upcoming [Pluralsight course](https://www.pluralsight.com/authors/elton-stoneman), *Hadoop for .NET Developers* - [follow me on Twitter](https://twitter.com/EltonStoneman) for updates on that.
 
+There's a walkthrough on my blog: [Hadoop and .NET: A Match Made in Docker](https://blog.sixeyed.com/hadoop-and-net-core-a-match-made-in-docker/)
+
 ## Usage
 
 Containers can start as a 'master' (running the HDFS Name Node and YARN Resource Manager services), or as a 'worker' (running HDFS Data Node and YARN Node Manager services).
