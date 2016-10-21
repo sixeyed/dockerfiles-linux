@@ -3,12 +3,14 @@ package main
 import (
     "fmt"
     "net/http"
+    "os"
 )
 
 func handler(w http.ResponseWriter, r *http.Request) {
     path := r.URL.Path[1:]
     if (path == "err") {
-        panic(fmt.Sprintf("err!"))
+        fmt.Println("err!")
+        os.Exit(1)
     }
     fmt.Printf("Responding to path: %s\n", path)
     fmt.Fprintf(w, "This is: %s!", path)
