@@ -1,0 +1,27 @@
+version: '2'
+services:
+
+  sync-engine:
+    image: sixeyed/nylas-sync-engine
+    ports:
+      - 5595:5555
+    volumes:
+      - nylas_part:/var/lib/inboxapp
+    hostname: sync-engine
+
+  mysql:
+    image: mysql:5.5
+    environment:
+      - MYSQL_ROOT_PASSWORD=n7la5!
+    volumes:
+      - nylas_mysql:/var/lib/mysql
+
+  redis:
+    image: redis:alpine
+    volumes:
+      - nylas_redis:/data
+
+volumes:
+  nylas_part:
+  nylas_mysql:
+  nylas_redis:
