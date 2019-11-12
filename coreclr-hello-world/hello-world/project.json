@@ -9,8 +9,7 @@
         "dnx451": { },
         "dnxcore50": {
             "dependencies": {
-                "System.Console": "4.0.0-beta-23220",
-                "WindowsAzure.Storage" : "5.0.3-preview"
+                "System.Console": "4.0.0-beta-23220"
             }
         }
     }
